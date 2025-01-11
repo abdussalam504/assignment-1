@@ -25,6 +25,12 @@ p {
   color: #ffff;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.btn-primary:hover {
+  color: rgb(3, 52, 3);
+  transform: scale(1.2);
+  background: wheat;
 }
 .bg-color {
   background: #c6e4d6;
@@ -69,7 +75,13 @@ nav {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+    cursor: pointer;
   }
+  button:hover {
+    background: rgb(0, 106, 80);
+    color: red;
+    border: 1px solid rgb(225, 19, 54);
+  };
 }
 
 /* banner style */
@@ -105,12 +117,11 @@ nav {
     margin-bottom: 24px;
   }
   button {
-    color: rgb(255, 255, 255);
     font-family: Fira Sans;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-  }
+  };
 }
 
 /* pillars style */
@@ -142,7 +153,7 @@ nav {
       line-height: 24px;
       margin: 24px 0 10px;
     }
-  }
+  };
 }
 
 /* vition of future style */
@@ -164,7 +175,7 @@ nav {
       box-sizing: border-box;
       width: 410px;
       height: 325px;
-      padding: 24px;
+      padding: 30px;
       box-sizing: border-box;
       border-radius: 8px;
       background: rgba(84, 144, 245, 0.2);
@@ -174,11 +185,11 @@ nav {
       background-color: rgb(198, 228, 214);
       .btn-primary {
         background: rgb(9, 161, 92);
+       
       }
     }
     .three {
       background: rgb(247, 235, 207);
-
       .btn-primary {
         background: rgb(255, 194, 57);
       }
@@ -220,41 +231,75 @@ nav {
         margin: 12px 0 5px;
       }
     }
-  }
+  };
 }
 
 /* opinion style */
-
-.table {
-  margin-top: 24px;
-  margin-bottom: 80px;
-}
-
 table {
-  border-collapse: collapse;
+  width: 100%;
+  padding: 32px;
   border-radius: 16px;
   background: rgb(255, 255, 255);
-  width: 100%;
-  padding-top: 32px;
+  border-collapse: collapse;
+}
 
-  thead {
-    background: rgb(198, 228, 214);
-  }
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgb(198, 228, 214);
+  margin-top: 24px;
 
-  tr {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
+  p {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  };
+}
+
+td {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 24px;
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+
+  select {
+    padding: 12px 14px;
     box-sizing: border-box;
-    border: 1px solid rgba(14, 14, 14, 0.15);
-    background: rgba(255, 255, 255, 0.1);
-  }
+    border: 1px solid rgb(14, 14, 14);
+    border-radius: 4px;
+    background: rgb(198, 228, 214);
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    cursor: pointer;
+    margin-right: -80px;
+  };
+}
+
+td:hover {
+  background: rgba(245, 246, 246, 0.922);
+}
+th {
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgb(198, 228, 214);
 }
 
 /* Recent  style */
 
 .recent-news {
-  margin-bottom: 80px;
+  margin: 80px 0;
 
   .text-contant h3 {
     margin-bottom: 24px;
@@ -298,7 +343,7 @@ table {
 
   .recent-photo {
     margin: 24px 0;
-  }
+  };
 }
 
 /* donate style  */
@@ -335,9 +380,20 @@ table {
     border-radius: 16px;
     background: rgb(255, 255, 255);
     margin-top: 32px;
+    cursor: pointer;
+  }
+
+  .amount:hover {
+    background: rgb(198, 228, 214);
+    transition: all 0.3s ease-in;
+    scale: ;
   }
   .second {
     background: rgb(198, 228, 214);
+  }
+  .second:hover {
+    background: white;
+    transition: all 0.3s ease-in;
   }
 
   .other-amount {
@@ -351,6 +407,7 @@ table {
         padding: 20px;
         background: rgb(255, 255, 255);
         border: none;
+        cursor: pointer;
       }
       input::placeholder {
         color: rgba(14, 14, 14, 0.3);
@@ -363,7 +420,7 @@ table {
     button {
       margin-bottom: 80px;
     }
-  }
+  };
 }
 
 /* footer style */
@@ -397,9 +454,10 @@ footer {
         padding: 18px 40px;
         border-radius: 8px 0px 0px 8px;
         border: none;
+        cursor: pointer;
       }
     }
-  }
+  };
 }
 
 /* sicial media style */
@@ -417,8 +475,8 @@ footer {
     border-bottom: 1px solid rgba(14, 14, 14, 0.1);
     margin-bottom: 50px;
   }
-  .media-link img{
+  .media-link a {
     margin-right: 23px;
     cursor: pointer;
-  }
+  };
 }
