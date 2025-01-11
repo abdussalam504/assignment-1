@@ -67,7 +67,6 @@ nav {
 
   button {
     padding: 15px 30px;
-    box-sizing: border-box;
     border: 1px solid rgb(0, 106, 80);
     border-radius: 8px;
     color: rgb(0, 106, 80);
@@ -98,7 +97,6 @@ nav {
 
   .banner-text {
     width: 622px;
-    height: 326px;
   }
 
   .banner-text .title-name {
@@ -138,8 +136,6 @@ nav {
   gap: 24px;
 
   .cart {
-    width: 302px;
-    height: 244px;
     padding: 24px;
     box-sizing: border-box;
     border: 1px solid rgba(14, 14, 14, 0.15);
@@ -172,11 +168,9 @@ nav {
     margin: 32px 0;
 
     .cart {
-      box-sizing: border-box;
       width: 410px;
       height: 325px;
       padding: 30px;
-      box-sizing: border-box;
       border-radius: 8px;
       background: rgba(84, 144, 245, 0.2);
     }
@@ -210,7 +204,6 @@ nav {
   }
 
   .description {
-    box-sizing: border-box;
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);
@@ -247,7 +240,6 @@ table {
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  box-sizing: border-box;
   background: rgb(198, 228, 214);
   margin-top: 24px;
 
@@ -261,7 +253,6 @@ table {
 }
 
 td {
-  box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
   background: rgba(255, 255, 255, 0.1);
   padding: 30px 24px;
@@ -273,7 +264,6 @@ td {
 
   select {
     padding: 12px 14px;
-    box-sizing: border-box;
     border: 1px solid rgb(14, 14, 14);
     border-radius: 4px;
     background: rgb(198, 228, 214);
@@ -358,7 +348,6 @@ th {
     }
     p {
       width: 1104px;
-      height: 48px;
       margin: 0 auto;
     }
   }
@@ -375,7 +364,6 @@ th {
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-    box-sizing: border-box;
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);
@@ -386,7 +374,6 @@ th {
   .amount:hover {
     background: rgb(198, 228, 214);
     transition: all 0.3s ease-in;
-    scale: ;
   }
   .second {
     background: rgb(198, 228, 214);
